@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SampleApp.MainPage"
+             xmlns:ctrls="clr-namespace:SampleApp.Controls"
+             Title="RichEditor Sample">
+
+    <Grid BackgroundColor="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <ScrollView Grid.Row="0" Orientation="Horizontal">
+            <StackLayout Orientation="Horizontal">
+                <Button Text="undo" x:Name="UnDoBtn" Clicked="UnDoBtn_Clicked"></Button>
+                <Button Text="redo" x:Name="ReDoBtn" Clicked="ReDoBtn_Clicked"></Button>
+                <Button Text="SetHead1" x:Name="SetHead1Btn" Clicked="SetHead1Btn_Clicked"></Button>
+                <Button Text="SetHead2" x:Name="SetHead2Btn" Clicked="SetHead2Btn_Clicked"></Button>
+                <Button Text="SetHead3" x:Name="SetHead3Btn" Clicked="SetHead3Btn_Clicked"></Button>
+                <Button Text="SetHead4" x:Name="SetHead4Btn" Clicked="SetHead4Btn_Clicked"></Button>
+                <Button Text="SetHead5" x:Name="SetHead5Btn" Clicked="SetHead5Btn_Clicked"></Button>
+                <Button Text="SetHead6" x:Name="SetHead6Btn" Clicked="SetHead6Btn_Clicked"></Button>
+            </StackLayout>
+        </ScrollView>
+        <ctrls:RichEditorView Grid.Row="1"></ctrls:RichEditorView>
+    </Grid>
+
+</ContentPage>
